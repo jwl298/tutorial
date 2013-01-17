@@ -14,7 +14,7 @@ NEWSPIDER_MODULE = 'tutorial.spiders'
 ITEM_PIPELINES = [
 'tutorial.pipelines.NoData',
 'tutorial.pipelines.MongoDBPipeline',
-'tutorial.pipelines.DuplicatesPipeline',
+#'tutorial.pipelines.DuplicatesPipeline',
 ]
 
 MONGODB_SERVER = "localhost"

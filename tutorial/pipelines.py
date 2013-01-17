@@ -15,7 +15,7 @@ from scrapy import log
 from scrapy import signals
 
 
-class DuplicatesPipeline(object):
+'''class DuplicatesPipeline(object):
 
     def __init__(self):
         self.titles_seen = set()
@@ -25,7 +25,7 @@ class DuplicatesPipeline(object):
             raise DropItem("Duplicate item found: %s" % item)
         else:
             self.titles_seen.add(item['title'])
-            return item
+            return item'''
 
 class NoData(object):
     def process_item(self, item, spider):
