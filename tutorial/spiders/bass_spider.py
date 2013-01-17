@@ -17,7 +17,7 @@ class BassSpider(CrawlSpider):
     start_urls = ["http://www.talkbass.com/forum/f126"]
 
 
-    rules = [Rule(SgmlLinkExtractor(allow=['/f126/index*']), callback='parse_item', follow=True, restrict_xpaths=('//a[@title = 'Next Page'*]')]
+    rules = [Rule(SgmlLinkExtractor(allow=['/f126/index*']), callback='parse_item', follow=True, restrict_xpaths=('//a[@title = 'Next Page']')]
 
 
     def parse_item(self, response):
